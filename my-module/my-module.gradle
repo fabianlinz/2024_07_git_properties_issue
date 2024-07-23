@@ -1,0 +1,7 @@
+apply plugin: 'com.gorylenko.gradle-git-properties'
+
+/*
+generateGitProperties {
+    outputs.upToDateWhen { false }
+}
+ */

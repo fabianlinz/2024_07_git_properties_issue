@@ -1,0 +1,20 @@
+plugins {
+    id 'com.gorylenko.gradle-git-properties' version '2.4.2' apply false // also does not work with 2.4.0 from 2022-02
+}
+
+subprojects {
+   apply plugin: 'java'
+}
+
+// 7.0 => works fine
+// 8.0 => works fine
+// 8.5 => works fine
+// 8.6 => does not work
+// 8.7 => does not work
+// 8.8 => does not work
+// 8.9 => does not work
+
+wrapper {
+    gradleVersion = '8.10-20240723003427+0000'
+    distributionType = Wrapper.DistributionType.ALL
+}

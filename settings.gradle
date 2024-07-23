@@ -1,0 +1,7 @@
+addSubproject('my-module')
+
+void addSubproject(String name) {
+    include name
+    project(":" + name).buildFileName = name + ".gradle"
+}
+
